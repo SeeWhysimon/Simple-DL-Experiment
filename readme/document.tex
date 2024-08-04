@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[UTF8]{ctex}
+\usepackage{fullpage}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{lipsum}
+
+\hypersetup{
+  colorlinks=true, 
+  linkcolor=blue, 
+  citecolor=blue, 
+  urlcolor=blue,
+  pdfborder={0 0 0},
+  pdfborderstyle=/S/U/W 0
+}
+
+\title{学习回顾}
+\author{蔡鞅}
+\date{\today} 
+
+\begin{document}
+	
+	\maketitle 
+
+  \begin{abstract}
+    致魏老师：
+
+    在之前CNN的学习过程当中，我发现自己对于神经网络模型内部的结构了解较为匮乏，
+    以至于难以继续学习深入的内容。
+    5月份到7月份期间，我学习了深度学习当中的基本概念，例如损失函数、激活函数、反向传播、优化器，
+    以及模型训练当中的相关技巧，例如Batch Normalization、Weight Sharing、Truncated Loss。
+    此外，我还了解了一些经典的卷积神经网络结构，例如AlexNet、VGGNet、GoogleNet，
+    以及经典的循环神经网络结构，例如RNN、GRU、LSTM。
+    
+    最后，我利用PyTorch动手实现了一些结构较为简单的模型，并用CIFAR-10数据集和China Daily上的一些文章作为训练集，
+    开展了一些小实验，并用LaTex撰写了这篇实验笔记。
+    
+    由于训练模型的硬件条件有限（没有AMD或者Nvdia的GPU），数据集较小，循环神经网络的训练效果较为不理想。
+    此外，我个人在原始数据的处理以及格式转换上仍然缺乏一定的经验和能力，希望能够通过后续的学习弥补不足。
+
+    祝您工作顺利！
+  \end{abstract}
+
+	\newpage
+  \input{ResNet.tex}
+  \input{RNN.tex}
+	\input{LSTM.tex}
+	\input{Transformer.tex}
+
+  \input{Appendix.tex}
+	
+\end{document}
